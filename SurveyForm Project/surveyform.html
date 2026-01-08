@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Hotel DeLuna Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our services</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+<br>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+<br>
+      <label for="number" id="number-label">Age (optional)</label>
+<input type="number" id="number" name="number" min="3" max="98" placeholder="Age">
+<br>
+
+<p>Which option best describes your opinion on our services</p>
+      <select id="dropdown">
+        <option value="poor">Poor</option>
+        <option value="satisfactory">Satisfactory</option>
+        <option value="good">Good</option>
+        <option value="very-good">Very Good</option>
+        <option value="excellent" selected>Excellent</option>
+
+      </select>
+
+<p>Would you recommend Hotel DeLuna to a friend?</p>
+<input type="radio" id="yes-option" name="group1" value="I'm the value that gets sent if this is selected when I submit the form!">
+<label for="yes-option">Yes</label>
+
+<input type="radio" id="no-option" name="group1" value="I'm the value that gets sent if this is selected when I submit the form!">
+<label for="no-option">No</label>
+
+
+<p>What is your favorite feature of Hotel DeLuna?</p>
+    <select id="dropdown">
+      <option value="feature" selected>Select a feature</option>
+        <option value="food">Food</option>
+        <option value="room-service">Room Service</option>
+        <option value="service">Service</option>
+        <option value="hygeine">Hygeine</option>
+        <option value="staff">Staff-behaviour</option>
+      </select>
+
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <input type="checkbox" id="maintenance" name="maintenance" value="I'm the value that gets sent if this is checked when I submit the form!">
+      <label for="maintenance">Maintenance</label>
+
+      <input type="checkbox" id="cleanliness" name="cleanliness" value="I'm the value that gets sent if this is checked when I submit the form!">
+      <label for="cleanliness">Cleanliness</label>
+
+      <input type="checkbox" id="experience" name="experience" value="I'm the value that gets sent if this is checked when I submit the form!">
+      <label for="experience">Guest experience</label>
+
+      <input type="checkbox" id="communication" name="communication" value="I'm the value that gets sent if this is checked when I submit the form!">
+      <label for="communication">Communication</label>
+
+      <input type="checkbox" id="flexibility" name="flexibility" value="I'm the value that gets sent if this is checked when I submit the form!">
+      <label for="flexibility">Flexibility</label>
+
+
+      <p>Any comments or suggestions?</p>
+      <textarea width="20" height="20"></textarea>
+<br>
+      <button type="submit" id="submit">Submit</button>
+      
+    </form>
+  </body>
+</html>
